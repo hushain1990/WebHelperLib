@@ -11,7 +11,11 @@ import Foundation
 
 public class WebHelperLib {
     
-    let name = "WebHelperLib"
+    public let name = "WebHelperLib"
+    
+    public init() {
+        
+    }
     
     public func add(a: Int, b:Int) -> Int {
         return a + b
