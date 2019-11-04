@@ -16,6 +16,7 @@
 		3469479F237032B9002847E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3469479D237032B9002847E0 /* Main.storyboard */; };
 		346947A1237032BA002847E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346947A0237032BA002847E0 /* Assets.xcassets */; };
 		346947A4237032BA002847E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346947A2237032BA002847E0 /* LaunchScreen.storyboard */; };
+		346947AA237038F9002847E0 /* WebHelperLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346947A9237038F9002847E0 /* WebHelperLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		346947A0237032BA002847E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		346947A3237032BA002847E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		346947A5237032BA002847E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346947A9237038F9002847E0 /* WebHelperLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHelperLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				3469477A2370323B002847E0 /* WebHelperLib.h */,
 				3469477B2370323B002847E0 /* Info.plist */,
+				346947A9237038F9002847E0 /* WebHelperLib.swift */,
 			);
 			path = WebHelperLib;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					346947762370323B002847E0 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					3469477F2370323B002847E0 = {
 						CreatedOnToolsVersion = 11.0;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346947AA237038F9002847E0 /* WebHelperLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		3469478C2370323B002847E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Z3V87R69U6;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tv.WebHelperLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		3469478D2370323B002847E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Z3V87R69U6;
@@ -485,6 +493,7 @@
 		3469478F2370323B002847E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3V87R69U6;
 				INFOPLIST_FILE = WebHelperLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		346947902370323B002847E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z3V87R69U6;
 				INFOPLIST_FILE = WebHelperLibTests/Info.plist;

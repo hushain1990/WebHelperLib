@@ -11,8 +11,11 @@ import XCTest
 
 class WebHelperLibTests: XCTestCase {
 
+    var mWebHelperLib : WebHelperLib!
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        mWebHelperLib = WebHelperLib()
     }
 
     override func tearDown() {
@@ -31,4 +34,14 @@ class WebHelperLibTests: XCTestCase {
         }
     }
 
+    
+    func testAdd() {
+        XCTAssertEqual(mWebHelperLib.add(a: 1, b: 1), 2)
+    }
+    
+    func testMultiply() {
+        XCTAssertEqual(mWebHelperLib.multiply(a: 2, b: 2), 4)
+    }
+    
+    
 }
