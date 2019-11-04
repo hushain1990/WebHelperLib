@@ -92,8 +92,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "WebHelperLib/**/*.{h,m}"
-  # spec.exclude_files = "Classes/Exclude"
+  spec.source_files  = "WebHelperLib/**/*.{h,m,swift}"
+  spec.exclude_files = "WebHelperLib/WebHelperLib/*.plist"
 
   # spec.public_header_files = "Classes/**/*.h"
 
