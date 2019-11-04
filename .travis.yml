@@ -3,8 +3,8 @@ language: objective-c
 osx_image: xcode11.0
 env:
   matrix:
-    - TEST_SDK=iphonesimulator OS=13.0 NAME='iPhone XR'
-    - TEST_SDK=iphonesimulator OS=13.0 NAME='iPhone 11'
+    - TEST_SDK=iphonesimulator11.4 OS=13.0 NAME='iPhone XR'
+    - TEST_SDK=iphonesimulator11.4 OS=13.0 NAME='iPhone 11'
 
 script:
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -project WebHelperLib.xcodeproj -scheme WebHelperLib -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=YES
