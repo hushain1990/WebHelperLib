@@ -1,0 +1,6 @@
+coverage_service: cobertura_xml
+xcodeproj: WebHelperLib.xcodeproj
+scheme: WebHelperLib
+output_directory: reports
+ignore:
+  - WebHelperLibTests/*
