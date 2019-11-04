@@ -10,6 +10,12 @@
 		346947812370323B002847E0 /* WebHelperLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346947772370323B002847E0 /* WebHelperLib.framework */; };
 		346947862370323B002847E0 /* WebHelperLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346947852370323B002847E0 /* WebHelperLibTests.swift */; };
 		346947882370323B002847E0 /* WebHelperLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3469477A2370323B002847E0 /* WebHelperLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34694798237032B9002847E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34694797237032B9002847E0 /* AppDelegate.swift */; };
+		3469479A237032B9002847E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34694799237032B9002847E0 /* SceneDelegate.swift */; };
+		3469479C237032B9002847E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3469479B237032B9002847E0 /* ViewController.swift */; };
+		3469479F237032B9002847E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3469479D237032B9002847E0 /* Main.storyboard */; };
+		346947A1237032BA002847E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346947A0237032BA002847E0 /* Assets.xcassets */; };
+		346947A4237032BA002847E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346947A2237032BA002847E0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,14 @@
 		346947802370323B002847E0 /* WebHelperLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebHelperLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		346947852370323B002847E0 /* WebHelperLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHelperLibTests.swift; sourceTree = "<group>"; };
 		346947872370323B002847E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34694795237032B9002847E0 /* WebHelperLibExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebHelperLibExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34694797237032B9002847E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		34694799237032B9002847E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3469479B237032B9002847E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3469479E237032B9002847E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		346947A0237032BA002847E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		346947A3237032BA002847E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		346947A5237032BA002847E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34694792237032B9002847E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +76,7 @@
 			children = (
 				346947792370323B002847E0 /* WebHelperLib */,
 				346947842370323B002847E0 /* WebHelperLibTests */,
+				34694796237032B9002847E0 /* WebHelperLibExamples */,
 				346947782370323B002847E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +86,7 @@
 			children = (
 				346947772370323B002847E0 /* WebHelperLib.framework */,
 				346947802370323B002847E0 /* WebHelperLibTests.xctest */,
+				34694795237032B9002847E0 /* WebHelperLibExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +107,20 @@
 				346947872370323B002847E0 /* Info.plist */,
 			);
 			path = WebHelperLibTests;
+			sourceTree = "<group>";
+		};
+		34694796237032B9002847E0 /* WebHelperLibExamples */ = {
+			isa = PBXGroup;
+			children = (
+				34694797237032B9002847E0 /* AppDelegate.swift */,
+				34694799237032B9002847E0 /* SceneDelegate.swift */,
+				3469479B237032B9002847E0 /* ViewController.swift */,
+				3469479D237032B9002847E0 /* Main.storyboard */,
+				346947A0237032BA002847E0 /* Assets.xcassets */,
+				346947A2237032BA002847E0 /* LaunchScreen.storyboard */,
+				346947A5237032BA002847E0 /* Info.plist */,
+			);
+			path = WebHelperLibExamples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +173,23 @@
 			productReference = 346947802370323B002847E0 /* WebHelperLibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		34694794237032B9002847E0 /* WebHelperLibExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 346947A6237032BA002847E0 /* Build configuration list for PBXNativeTarget "WebHelperLibExamples" */;
+			buildPhases = (
+				34694791237032B9002847E0 /* Sources */,
+				34694792237032B9002847E0 /* Frameworks */,
+				34694793237032B9002847E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebHelperLibExamples;
+			productName = WebHelperLibExamples;
+			productReference = 34694795237032B9002847E0 /* WebHelperLibExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -150,6 +204,9 @@
 						CreatedOnToolsVersion = 11.0;
 					};
 					3469477F2370323B002847E0 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					34694794237032B9002847E0 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -169,6 +226,7 @@
 			targets = (
 				346947762370323B002847E0 /* WebHelperLib */,
 				3469477F2370323B002847E0 /* WebHelperLibTests */,
+				34694794237032B9002847E0 /* WebHelperLibExamples */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +243,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34694793237032B9002847E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346947A4237032BA002847E0 /* LaunchScreen.storyboard in Resources */,
+				346947A1237032BA002847E0 /* Assets.xcassets in Resources */,
+				3469479F237032B9002847E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +274,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34694791237032B9002847E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3469479C237032B9002847E0 /* ViewController.swift in Sources */,
+				34694798237032B9002847E0 /* AppDelegate.swift in Sources */,
+				3469479A237032B9002847E0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -215,6 +293,25 @@
 			targetProxy = 346947822370323B002847E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3469479D237032B9002847E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3469479E237032B9002847E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		346947A2237032BA002847E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				346947A3237032BA002847E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		346947892370323B002847E0 /* Debug */ = {
@@ -421,6 +518,42 @@
 			};
 			name = Release;
 		};
+		346947A7237032BA002847E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3V87R69U6;
+				INFOPLIST_FILE = WebHelperLibExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tv.WebHelperLibExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		346947A8237032BA002847E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z3V87R69U6;
+				INFOPLIST_FILE = WebHelperLibExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tv.WebHelperLibExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,6 +580,15 @@
 			buildConfigurations = (
 				3469478F2370323B002847E0 /* Debug */,
 				346947902370323B002847E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		346947A6237032BA002847E0 /* Build configuration list for PBXNativeTarget "WebHelperLibExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				346947A7237032BA002847E0 /* Debug */,
+				346947A8237032BA002847E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
