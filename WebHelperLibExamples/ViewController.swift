@@ -26,6 +26,15 @@ class ViewController: UIViewController {
     }
 
 
+    func postApi() {
+        
+        WebHelperLib.shared.Request(.POST, urlString: "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty", parameters: [], loading: true, complitionHandler: { (obj, res) in
+            
+        }) { (error) in
+            
+        }
+        
+    }
     
     
 }
