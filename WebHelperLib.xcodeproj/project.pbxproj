@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340E4DFF23715E4F00D41CF4 /* WebManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E4DFE23715E4F00D41CF4 /* WebManager.swift */; };
+		340E4E0123715EAE00D41CF4 /* WebHelperConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340E4E0023715EAE00D41CF4 /* WebHelperConstant.swift */; };
+		340E4E03237168F200D41CF4 /* WebHelperLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346947772370323B002847E0 /* WebHelperLib.framework */; };
+		340E4E04237168F200D41CF4 /* WebHelperLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 346947772370323B002847E0 /* WebHelperLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		340E4E082371691400D41CF4 /* WebHelperLibTests.xctest in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = 346947802370323B002847E0 /* WebHelperLibTests.xctest */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		346947812370323B002847E0 /* WebHelperLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346947772370323B002847E0 /* WebHelperLib.framework */; };
 		346947862370323B002847E0 /* WebHelperLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346947852370323B002847E0 /* WebHelperLibTests.swift */; };
 		346947882370323B002847E0 /* WebHelperLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 3469477A2370323B002847E0 /* WebHelperLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,6 +25,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		340E4E05237168F200D41CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469476E2370323B002847E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 346947762370323B002847E0;
+			remoteInfo = WebHelperLib;
+		};
+		340E4E092371691400D41CF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469476E2370323B002847E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3469477F2370323B002847E0;
+			remoteInfo = WebHelperLibTests;
+		};
 		346947822370323B002847E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3469476E2370323B002847E0 /* Project object */;
@@ -29,7 +48,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		340E4E07237168F200D41CF4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				340E4E04237168F200D41CF4 /* WebHelperLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		340E4E0B2371691500D41CF4 /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				340E4E082371691400D41CF4 /* WebHelperLibTests.xctest in Embed PlugIns */,
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		340E4DFE23715E4F00D41CF4 /* WebManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebManager.swift; sourceTree = "<group>"; };
+		340E4E0023715EAE00D41CF4 /* WebHelperConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHelperConstant.swift; sourceTree = "<group>"; };
 		346947772370323B002847E0 /* WebHelperLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebHelperLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3469477A2370323B002847E0 /* WebHelperLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebHelperLib.h; sourceTree = "<group>"; };
 		3469477B2370323B002847E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,12 +113,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340E4E03237168F200D41CF4 /* WebHelperLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		340E4E02237168F200D41CF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3469476D2370323B002847E0 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +134,7 @@
 				346947842370323B002847E0 /* WebHelperLibTests */,
 				34694796237032B9002847E0 /* WebHelperLibExamples */,
 				346947782370323B002847E0 /* Products */,
+				340E4E02237168F200D41CF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +154,7 @@
 				3469477A2370323B002847E0 /* WebHelperLib.h */,
 				3469477B2370323B002847E0 /* Info.plist */,
 				346947A9237038F9002847E0 /* WebHelperLib.swift */,
+				340E4E0023715EAE00D41CF4 /* WebHelperConstant.swift */,
 			);
 			path = WebHelperLib;
 			sourceTree = "<group>";
@@ -116,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				34694797237032B9002847E0 /* AppDelegate.swift */,
+				340E4DFE23715E4F00D41CF4 /* WebManager.swift */,
 				34694799237032B9002847E0 /* SceneDelegate.swift */,
 				3469479B237032B9002847E0 /* ViewController.swift */,
 				3469479D237032B9002847E0 /* Main.storyboard */,
@@ -183,10 +240,14 @@
 				34694791237032B9002847E0 /* Sources */,
 				34694792237032B9002847E0 /* Frameworks */,
 				34694793237032B9002847E0 /* Resources */,
+				340E4E07237168F200D41CF4 /* Embed Frameworks */,
+				340E4E0B2371691500D41CF4 /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				340E4E06237168F200D41CF4 /* PBXTargetDependency */,
+				340E4E0A2371691400D41CF4 /* PBXTargetDependency */,
 			);
 			name = WebHelperLibExamples;
 			productName = WebHelperLibExamples;
@@ -267,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340E4E0123715EAE00D41CF4 /* WebHelperConstant.swift in Sources */,
 				346947AA237038F9002847E0 /* WebHelperLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340E4DFF23715E4F00D41CF4 /* WebManager.swift in Sources */,
 				3469479C237032B9002847E0 /* ViewController.swift in Sources */,
 				34694798237032B9002847E0 /* AppDelegate.swift in Sources */,
 				3469479A237032B9002847E0 /* SceneDelegate.swift in Sources */,
@@ -292,6 +355,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		340E4E06237168F200D41CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 346947762370323B002847E0 /* WebHelperLib */;
+			targetProxy = 340E4E05237168F200D41CF4 /* PBXContainerItemProxy */;
+		};
+		340E4E0A2371691400D41CF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3469477F2370323B002847E0 /* WebHelperLibTests */;
+			targetProxy = 340E4E092371691400D41CF4 /* PBXContainerItemProxy */;
+		};
 		346947832370323B002847E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 346947762370323B002847E0 /* WebHelperLib */;
